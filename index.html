@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bir Mesajım Var 💌</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #ff4e8b, #111);
+            font-family: Arial, sans-serif;
+            text-align: center;
+            color: white;
+            padding-top: 100px;
+        }
+
+        .kutu {
+            background-color: rgba(0,0,0,0.6);
+            width: 350px;
+            margin: auto;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 0 20px pink;
+        }
+
+        h1 {
+            color: #ff4e8b;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .btn {
+            background-color: #ff4e8b;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: white;
+            color: #ff4e8b;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="kutu">
+        <h1>Bir Şey Söylemem Lazım...</h1>
+        <p>
+            Seninle konuşmak günümün en güzel kısmı.  
+            Enerjin ayrı, gülüşün ayrı güzel.  
+            Bilmiyorum ama senle her şey biraz daha keyifli 🙂
+        </p>
+
+        <button class="btn" onclick="mesaj()">Tıkla</button>
+
+        <p id="sonuc"></p>
+    </div>
+
+    <script>
+        function mesaj() {
+            document.getElementById("sonuc").innerHTML =
+            "İyi ki varsın 💫";
+        }
+    </script>
+
+</body>
+</html>
