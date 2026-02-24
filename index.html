@@ -1,27 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bir Mesajım Var 💌</title>
+
     <style>
         body {
+            margin: 0;
             background: linear-gradient(135deg, #ff4e8b, #111);
             font-family: Arial, sans-serif;
             text-align: center;
             color: white;
-            padding-top: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
 
         .kutu {
-            background-color: rgba(0,0,0,0.6);
-            width: 350px;
-            margin: auto;
+            background-color: rgba(0,0,0,0.7);
+            width: 90%;
+            max-width: 400px;
             padding: 30px;
             border-radius: 20px;
-            box-shadow: 0 0 20px pink;
+            box-shadow: 0 0 25px pink;
         }
 
         h1 {
             color: #ff4e8b;
+            font-size: 24px;
         }
 
         p {
@@ -33,11 +40,16 @@
             background-color: #ff4e8b;
             color: white;
             border: none;
-            padding: 12px 20px;
+            padding: 14px 25px;
             margin-top: 20px;
-            border-radius: 10px;
+            border-radius: 12px;
+            font-size: 16px;
             cursor: pointer;
             transition: 0.3s;
+        }
+
+        .btn:active {
+            transform: scale(0.95);
         }
 
         .btn:hover {
@@ -51,10 +63,11 @@
 
     <div class="kutu">
         <h1>Bir Şey Söylemem Lazım...</h1>
+
         <p>
             Seninle konuşmak günümün en güzel kısmı.  
             Enerjin ayrı, gülüşün ayrı güzel.  
-            Bilmiyorum ama senle her şey biraz daha keyifli 🙂
+            Sen olunca her şey biraz daha güzel 🙂
         </p>
 
         <button class="btn" onclick="mesaj()">Tıkla</button>
