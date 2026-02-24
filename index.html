@@ -5,16 +5,26 @@
     <title>Bir Mesajım Var 💌</title>
 
     <style>
-        body {
+        * {
             margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+        }
+
+        body {
             background: linear-gradient(135deg, #ff4e8b, #111);
             font-family: Arial, sans-serif;
-            text-align: center;
             color: white;
+
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+
+            min-height: 100dvh; /* mobil fix */
         }
 
         .kutu {
@@ -24,11 +34,13 @@
             padding: 30px;
             border-radius: 20px;
             box-shadow: 0 0 25px pink;
+            text-align: center;
         }
 
         h1 {
             color: #ff4e8b;
             font-size: 24px;
+            margin-bottom: 15px;
         }
 
         p {
